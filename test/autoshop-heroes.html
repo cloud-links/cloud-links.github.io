@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AutoShop Heroes</title>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/screenshot2023-06-16170743.png" alt="AutoShop Heroes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta name="title" content="AutoShop Heroes">
+<meta name="dc.title" content="AutoShop Heroes">
+<meta name="description" content="">
+<meta name="keywords" content="AutoShop Heroes">
+<meta name="author" content="">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+* {
+ font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+.navbar a {
+ font-size: 18px;
+ font-weight: bold;
+
+}
+
+.nav-link {
+ color: #000000 !important;
+}
+
+.btn-md {
+ padding: 15px 30px;
+ border-radius: 0;
+}
+
+.mbr-section-subsection {
+ color: #999999;
+ font-size: 20px;
+ margin-bottom: 21px;
+}
+
+.mbr-section-h1 {
+ font-size: 45px !important;
+}
+
+.text-grey {
+ color: #404040;
+}
+
+.content1 {
+ font-size: 16px !important;
+ color: #606060;
+}
+
+.bg-brown {
+ background: #f5f3ef;
+}
+
+.bg-primary-new {
+ background: #ffffff;
+
+}
+
+.bg-primary-new * {
+ color: #0e0e0e !important;
+}
+
+.display-4 {
+ font-size: 45px !important;
+}
+
+.font-weight-400 {
+ font-weight: 400;
+}
+
+.display-iconfont {
+ background-color: #000000;
+ font-size: 30px;
+ height: 56px;
+ min-width: 56px;
+ padding: 0.7rem;
+ padding-top: 13px;
+ color: #fff !important;
+ border: 1px solid #000000;
+ border-radius: 50%;
+}
+
+.special-content h4 {
+ font-size: 24px !important;
+}
+
+.special-content p,
+.special-content a,
+.special-content label,
+.special-content span {
+ font-size: 16px !important;
+}
+
+.special-content .card1 {
+ background: #eae8e4 !important;
+}
+
+.special-content .card2 {
+ background: #eddad8 !important;
+}
+
+.special-content .card3 {
+ background: #c1bebe !important;
+}
+
+.special-content .card4 {
+ background: #bcd9df !important;
+}
+
+.special-content .card1 * {
+ color: #000000;
+}
+
+.special-content .card2 * {
+ color: #000000;
+}
+
+.special-content .card3 * {
+ color: #000000;
+}
+
+.special-content .card4 * {
+ color: #000000;
+}
+
+body {
+ color: #232323;
+}
+
+
+ul {
+ list-style: circle;
+}
+
+a {
+ text-decoration: none !important;
+}
+
+.bg-brown * {
+ color: #121212;
+
+}
+
+.bg-brown a,
+.bg-primary-new a {
+ color: #121212 !important;
+ text-decoration: underline !important;
+}
+
+footer * {
+ font-size: 16px !important;
+}
+
+.bg-brown p,
+.bg-brown a,
+.bg-brown span,
+.bg-brown label {
+ font-size: 16px !important;
+}
+
+.bg-primary-new p,
+.bg-primary-new span,
+.bg-primary-new label {
+ font-size: 16px !important;
+}
+
+.bg-primary-new a {
+ font-size: 16px;
+}
+
+
+.contentImg:hover {
+ box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
+ transform: rotate(-2deg) scale(1.03);
+
+}
+
+.btn-warning {
+ background-color: #ffc658 !important;
+ border-color: #ffc658 !important;
+ color: #000000 !important;
+}
+
+.contentImg {
+ transition: all 0.3s;
+ border-radius: 30px;
+}
+
+iframe {
+ border: none !important;
+}
+
+footer {
+ background: #0d0d0d;
+ color: #ffffff;
+}
+
+footer a {
+ color: #ffffff;
+ text-decoration: underline;
+
+}
+
+.underlineShow {
+ font-weight: inherit;
+ background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%);
+ background-repeat: no-repeat;
+ background-size: 100% 30%;
+ background-position: 0 90%;
+ transition: background-size 0.2s ease-in;
+}
+
+.allShow:hover,
+.underlineShow:hover {
+ background-size: 100% 100% !important;
+
+ background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%) !important;
+ background-repeat: no-repeat !important;
+
+ background-position: 0 90% !important;
+ transition: background-size 0.2s ease-in !important;
+}
+
+.icon-button i {
+ font-size: 20px;
+ padding: 10px;
+}
+
+.icon-button i:hover {
+ color: #7CE0D3;
+}
+
+.blackPara {
+ background: rgba(0, 0, 0, 0.6);
+ text-align: center;
+}
+
+.blackPara * {
+ color: white !important;
+
+
+}
+.faq_area {
+ position: relative;
+ z-index: 1;
+
+}
+
+.faq-accordian {
+ position: relative;
+ z-index: 1;
+}
+
+.faq-accordian .card {
+ position: relative;
+ z-index: 1;
+ margin-bottom: 1.5rem;
+}
+
+.faq-accordian .card:last-child {
+ margin-bottom: 0;
+}
+
+.faq-accordian .card .card-header {
+ background-color: #ffffff;
+ padding: 0;
+ border-bottom-color: #ebebeb;
+}
+
+.faq-accordian .card .card-header h6 {
+ cursor: pointer;
+ padding: 1.75rem 2rem;
+ color: #3f43fd;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ -ms-grid-row-align: center;
+ align-items: center;
+ -webkit-box-pack: justify;
+ -ms-flex-pack: justify;
+ justify-content: space-between;
+}
+
+.faq-accordian .card .card-header h6 span {
+ font-size: 1.5rem;
+}
+
+.faq-accordian .card .card-header h6.collapsed {
+ color: #070a57;
+}
+
+.faq-accordian .card .card-header h6.collapsed span {
+ -webkit-transform: rotate(-180deg);
+ transform: rotate(-180deg);
+}
+
+.faq-accordian .card .card-body {
+ padding: 1.75rem 2rem;
+}
+
+.faq-accordian .card .card-body p:last-child {
+ margin-bottom: 0;
+}
+
+.special-content .row-item {
+ padding: 3rem;
+ padding-top: 3.7rem;
+ height: 100%;
+}
+
+.special-content .row-item.card1 {
+ background: #eae8e4;
+}
+
+.special-content .row-item.card2 {
+ background: #eddad8;
+}
+
+.special-content .row-item.card3 {
+ background: #c1bebe;
+}
+
+.special-content .row-item.card4 {
+ background: #bcd9df;
+}
+
+.special-content .card-img {
+ margin-bottom: 1.7rem;
+ text-align: left;
+}
+
+.special-content .item-wrapper {
+ margin-bottom: 1.5rem;
+}
+
+.display-card-title {
+ margin-bottom: 1rem;
+}
+
+.news-widget-border {
+ border: 1px solid #607d8b2e;
+ border-radius: 5px;
+ padding: 20px 20px;
+ background: white;
+}
+
+.display-8 {
+ font-size: 14px;
+}
+
+.display-9 {
+ font-size: 20px;
+ font-weight: bold;
+}
+
+.news-widget {
+ background: #F5F5F7;
+}
+
+.news-widget img {
+ object-fit: cover;
+ border-radius: 0px !important;
+}
+
+.icon-button i:hover {
+ background: white;
+ color: #ffc107;
+ border-radius: 50%;
+ width: 10mm;
+ text-align: center;
+ height: 10mm;
+}
+
+.icon-button i {
+
+
+ border-radius: 50%;
+ width: 10mm;
+ text-align: center;
+ height: 10mm;
+}
+
+.banner-img {
+ width: 100%;
+ max-height: 720px;
+ object-fit: cover;
+ object-position: center;
+ display: block;
+ max-height: 100%;
+ max-width: 100%;
+ margin: auto;
+ position: absolute;
+ top: 0;
+ left: 0;
+
+ right: 0;
+}
+
+.img-overlay {
+ position: relative;
+
+ min-height: 600px;
+ }
+
+@media only screen and (max-width:1000px) {
+ .img-overlay {
+ min-height: 0px !important;
+
+ }
+
+ .mbr-section-h1 {
+ font-size: 20px;
+ }
+
+ .mbr-section-subsection {
+ font-size: 15px !important;
+ }
+
+ .bg-image {
+ padding-bottom: 0px !important;
+ }
+}
+
+.ILinks {
+ text-decoration: underline !important;
+}
+
+.mbr-section-h2 {
+ font-size: 2rem !important;
+}
+
+.sitemapDiv {
+ max-height: 300px;
+ overflow-y: auto;
+}
+
+.dropdown-menu {
+ max-width: 800px;
+ overflow-x: auto;
+}
+</style>
+ 
+ 
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "ProfessionalService",
+"name": "AutoShop Heroes",
+"url": "https://www.autoshopheroes.com",
+  
+"logo": "img/screenshot2023-06-16170743.png",
+"image": "img/screenshot2023-06-16170743.png",
+ 
+"url": "autoshop-heroes.html",
+"telephone":"(413) 341-0347",
+"address": {
+"@type": "PostalAddress", 
+"streetAddress": "445 Seaside Ave Honolulu, HI 96815"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org",
+"temporalCoverage": "https://www.autoshopheroes.com",
+"significantLink": "https://www.autoshopheroes.com",
+"relatedLink": "https://www.autoshopheroes.com",
+"lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {
+"sameAs": "https://www.autoshopheroes.com",
+"url": "autoshop-heroes.html",
+"additionalType": "https://www.autoshopheroes.com",
+"name": "",
+"identifier": "https://www.autoshopheroes.com",
+"description": "",
+"disambiguatingDescription": "",
+"alternateName": ""
+},
+"accessibilitySummary": "",
+"associatedMedia": {
+"embedUrl": "",
+"contentUrl": "",
+"about": {
+"sameAs": "https://www.autoshopheroes.com",
+"url": "autoshop-heroes.html"
+}
+}
+},
+"mainEntityOfPage": "https://www.autoshopheroes.com",
+"keywords": [""],
+"award": ["Best "],
+"teaches": [""],
+"offers": [{
+"sku": "",
+"availabilityStarts": "2023-06-20 12:53:05",
+"priceCurrency": "USD"
+},
+{
+"sku": "",
+"availabilityStarts":"2023-06-20 12:53:05",
+"priceCurrency": "USD"
+},
+{
+"sku": "",
+"availabilityStarts":"2023-06-20 12:53:05",
+"priceCurrency": "USD"
+},
+{
+"sku": "",
+"availabilityStarts":"2023-06-20 12:53:05",
+"priceCurrency": "USD"
+},
+{
+"sku": "",
+"availabilityStarts":"2023-06-20 12:53:05",
+"priceCurrency": "USD"
+},
+{
+"sku": "",
+"availabilityStarts": "2023-06-20 12:53:05",
+"priceCurrency": "USD"
+},
+{
+"sku": "",
+"availabilityStarts":"2023-06-20 12:53:05",
+"priceCurrency": "USD"
+} 
+],
+"educationalUse": [""],
+"text": "",
+"workExample": {
+"about": {
+"sameAs": "https://www.autoshopheroes.com",
+"url": "autoshop-heroes.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "autoshop-heroes.html",
+"sameAs": "https://www.autoshopheroes.com"
+}
+},
+"hasPart":[
+]
+}
+</script><script type="application/ld+json">
+
+{
+"@context":"https://schema.org",
+"@type":"WebPage",
+"headline":"AutoShop Heroes",
+"url":"https://www.autoshopheroes.com",
+"about":
+
+[{"@type": "Thing", "name": "seo", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine_optimization",
+"https://www.google.com/search?q=seo&kgmid=/m/019qb_"]},
+{"@type": "Thing", "name": "auto repair shops", "sameAs": ["https://en.wikipedia.org/wiki/Automobile_repair_shop",
+"https://www.google.com/search?q=auto+repair+shops&kgmid=/m/0dgc3t"]},
+{"@type": "Thing", "name": "google", "sameAs": ["https://en.wikipedia.org/wiki/Google",
+"https://www.google.com/search?q=google&kgmid=/m/0jkvkv0"]},
+{"@type": "Thing", "name": "bandcamp", "sameAs": ["https://en.wikipedia.org/wiki/Bandcamp",
+"https://www.google.com/search?q=bandcamp&kgmid=/m/0g5wssd"]},
+{"@type": "Thing", "name": "auto repair", "sameAs": ["https://en.wikipedia.org/wiki/Auto_mechanic",
+"https://www.google.com/search?q=auto+repair&kgmid=/m/081pl8"]},
+{"@type": "Thing", "name": "search results", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine",
+"https://www.google.com/search?q=search+results&kgmid=/m/0dgjp2"]},
+{"@type": "Thing", "name": "phone number", "sameAs": ["https://en.wikipedia.org/wiki/Telephone_number",
+"https://www.google.com/search?q=phone+number&kgmid=/m/07klh"]},
+{"@type": "Thing", "name": "company", "sameAs": ["https://en.wikipedia.org/wiki/Company",
+"https://www.google.com/search?q=company&kgmid=/m/03bxgrp"]},
+{"@type": "Thing", "name": "social media", "sameAs": ["https://en.wikipedia.org/wiki/Social_media",
+"https://www.google.com/search?q=social+media&kgmid=/m/0fch0p"]},
+{"@type": "Thing", "name": "visibility", "sameAs": ["https://en.wikipedia.org/wiki/Visibility",
+"https://www.google.com/search?q=visibility&kgmid=/m/05xqwk"]},
+{"@type": "Thing", "name": "auto shop", "sameAs": ["https://en.wikipedia.org/wiki/Automobile_repair_shop",
+"https://www.google.com/search?q=auto+shop&kgmid=/m/0dgc3t"]},
+{"@type": "Thing", "name": "folk", "sameAs": ["https://en.wikipedia.org/wiki/Folk_music",
+"https://www.google.com/search?q=folk&kgmid=/m/02w4v"]},
+{"@type": "Thing", "name": "ppc", "sameAs": ["https://en.wikipedia.org/wiki/Pay-per-click",
+"https://www.google.com/search?q=ppc&kgmid=/m/03_hgq"]},
+{"@type": "Thing", "name": "budget", "sameAs": ["https://en.wikipedia.org/wiki/Budget",
+"https://www.google.com/search?q=budget&kgmid=/m/02144t"]},
+{"@type": "Thing", "name": "search engines", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine",
+"https://www.google.com/search?q=search+engines&kgmid=/m/0dgjp2"]},
+{"@type": "Thing", "name": "all rights reserved", "sameAs": ["https://en.wikipedia.org/wiki/All_rights_reserved",
+"https://www.google.com/search?q=all+rights+reserved&kgmid=/m/02_t90"]},
+{"@type": "Thing", "name": "music", "sameAs": ["https://en.wikipedia.org/wiki/Music",
+"https://www.google.com/search?q=music&kgmid=/m/04rlf"]},
+{"@type": "Thing", "name": "collision", "sameAs": ["https://en.wikipedia.org/wiki/Collision",
+"https://www.google.com/search?q=collision&kgmid=/m/0b693"]},
+{"@type": "Thing", "name": "keyword", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine_optimization",
+"https://www.google.com/search?q=keyword&kgmid=/m/019qb_"]},
+{"@type": "Thing", "name": "directory", "sameAs": ["https://en.wikipedia.org/wiki/Web_directory",
+"https://www.google.com/search?q=directory&kgmid=/m/011_tj"]},
+{"@type": "Thing", "name": "ads campaign", "sameAs": ["https://en.wikipedia.org/wiki/Advertising_campaign",
+"https://www.google.com/search?q=ads+campaign&kgmid=/m/05zc0s"]}],
+
+"mentions":
+
+[{"@type": "Thing", "name": "keyword", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine_optimization",
+"https://www.google.com/search?q=keyword&kgmid=/m/019qb_"]},
+{"@type": "Thing", "name": "facebook", "sameAs": ["https://en.wikipedia.org/wiki/Facebook",
+"https://www.google.com/search?q=facebook&kgmid=/m/02y1vz"]},
+{"@type": "Thing", "name": "keyword research", "sameAs": ["https://en.wikipedia.org/wiki/Keyword_research",
+"https://www.google.com/search?q=keyword+research&kgmid=/m/02wvj87"]},
+{"@type": "Thing", "name": "the internet", "sameAs": ["https://en.wikipedia.org/wiki/Internet",
+"https://www.google.com/search?q=the+internet&kgmid=/m/03rlt"]},
+{"@type": "Thing", "name": "internet", "sameAs": ["https://en.wikipedia.org/wiki/Internet",
+"https://www.google.com/search?q=internet&kgmid=/m/03rlt"]},
+{"@type": "Thing", "name": "ads campaign", "sameAs": ["https://en.wikipedia.org/wiki/Advertising_campaign",
+"https://www.google.com/search?q=ads+campaign&kgmid=/m/05zc0s"]},
+{"@type": "Thing", "name": "directory", "sameAs": ["https://en.wikipedia.org/wiki/Web_directory",
+"https://www.google.com/search?q=directory&kgmid=/m/011_tj"]},
+{"@type": "Thing", "name": "backlinks", "sameAs": ["https://en.wikipedia.org/wiki/Backlink",
+"https://www.google.com/search?q=backlinks&kgmid=/m/02s3gg"]},
+{"@type": "Thing", "name": "internet news", "sameAs": ["https://en.wikipedia.org/wiki/Digital_journalism",
+"https://www.google.com/search?q=internet+news&kgmid=/m/02qj5sx"]},
+{"@type": "Thing", "name": "google search", "sameAs": ["https://en.wikipedia.org/wiki/Google_Search",
+"https://www.google.com/search?q=google+search&kgmid=/m/026qqkx"]},
+{"@type": "Thing", "name": "ad blockers", "sameAs": ["https://en.wikipedia.org/wiki/Ad_blocking",
+"https://www.google.com/search?q=ad+blockers&kgmid=/m/048tw4"]},
+{"@type": "Thing", "name": "e-commerce", "sameAs": ["https://en.wikipedia.org/wiki/E-commerce",
+"https://www.google.com/search?q=e-commerce&kgmid=/m/0fldh6"]},
+{"@type": "Thing", "name": "serp", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine_results_page",
+"https://www.google.com/search?q=serp&kgmid="]},
+{"@type": "Thing", "name": "google map", "sameAs": ["https://en.wikipedia.org/wiki/Google_Maps",
+"https://www.google.com/search?q=google+map&kgmid=/m/055t58"]},
+{"@type": "Thing", "name": "search engine optimization", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine_optimization",
+"https://www.google.com/search?q=search+engine+optimization&kgmid=/m/019qb_"]},
+{"@type": "Thing", "name": "social media", "sameAs": ["https://en.wikipedia.org/wiki/Social_media",
+"https://www.google.com/search?q=social+media&kgmid=/m/0fch0p"]},
+{"@type": "Thing", "name": "news", "sameAs": ["https://en.wikipedia.org/wiki/News",
+"https://www.google.com/search?q=news&kgmid=/m/05jhg"]},
+{"@type": "Thing", "name": "reputation", "sameAs": ["https://en.wikipedia.org/wiki/Reputation",
+"https://www.google.com/search?q=reputation&kgmid=/m/01hwbh"]},
+{"@type": "Thing", "name": "search engines", "sameAs": ["https://en.wikipedia.org/wiki/Search_engine",
+"https://www.google.com/search?q=search+engines&kgmid=/m/0dgjp2"]},
+{"@type": "Thing", "name": "marketing", "sameAs": ["https://en.wikipedia.org/wiki/Marketing",
+"https://www.google.com/search?q=marketing&kgmid=/m/0g4gr"]}]
+}
+
+</script></head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5 pt-3 pb-3">
+<a class="navbar-brand" href="autoshop-heroes.html" rel="nofollow" ><img alt="img/screenshot2023-06-16170743.png" src="img/screenshot2023-06-16170743.png"  width="150px" rel="nofollow"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="mt-2  nav-item pr-md-4"><a class="nav-link allShow  " href="autoshop-heroes.html" rel="nofollow" >AutoShop Heroes</a></li>  
+<li class="nav-item "><a class="btn btn-md btn-warning " href="https://www.autoshopheroes.com/contact/" rel="nofollow">Contact Us</a></li>
+</ul>
+</div>
+</nav> 
+<div class="container-fluid img-overlay bg-image">
+<img  src="img/autoshop-heroes.jpg" width="100%" class="banner-img" alt="AutoShop Heroes" title="AutoShop Heroes AutoShop Heroes">
+</div><div class="container-fluid bg-primary-new  ">
+<div class="row  pb-5">
+<div class="container pt-3 pb-5 ">
+<div class="row">
+<div class="col-lg-12 text-center " id="">
+<h1 class="mbr-section-h1 text-white mb-0 ">AutoShop Heroes</h1>  
+<h2 class="mbr-section-subsection text-white "><b></b></h2>
+</div><div class=" col-lg-12 m-auto">
+<div class="content1 ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid py-4 bg-brown">
+<div class="container py-5">
+<div class="row">
+<div class="col-lg-5">
+<h2 class="display-4 mt-2 font-weight-400" id="">  —</h2>
+<ul>
+</ul>
+</div>
+<div class="col-lg-7 pt-5 content2">
+<div> </div>
+</div>
+</div>
+</div>
+</div><div class="container special-content pt-5">
+<div class="row align-left"><div class="col-md-6 col-md-12  item-wrapper">
+<div class="row-item card1 align-left">
+<div class="card-img facks-white"><i class="display-iconfont text-center fa  "></i></div>
+<h4 class="facss-fonts-style display-card-title display-black display-bold display-5">AutoShop Heroes</h4>
+<p class="display-text facss-fonts-style mb-0 display-7"><blockquote class="twitter-tweet">
+<p dir="ltr" lang="zxx"><a href="https://t.co/7famtTBe8h">pic.twitter.com/7famtTBe8h</a></p>
+— Cloud Links (@ldcloudlinks) <a href="https://twitter.com/ldcloudlinks/status/1669634324650512384?ref_src=twsrc%5Etfw">June 16, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </p>
+</div>
+</div>
+</div>
+</div><div class="container-fluid py-4 bg-primary-new">
+<div class="container py-5">
+<div class="row" id="">
+<div class="col-lg-6 pt-5 ">
+<h3 class="display-4 mt-2 font-weight-400" id=""> </h3>
+<div class="content3"> </div>
+</div>
+<div class="col-lg-6 pt-5">
+<img class="w-100 contentImg"  src="img/5-ways-seo-web-design-go-together-5e2945dd5df37.png"  alt=""></div>
+</div>
+</div>
+</div>
+<div class="container-fluid py-4 bg-brown">
+<div class="container py-5">
+<div class="row" id="">
+<div class="col-lg-6 pt-5">
+<iframe width="100%" height="600" style="border-radius: 5px;" src="https://www.autoshopheroes.com" title="" frameborder="0" ></iframe></div><div class="col-lg-6 pt-5 ">
+<h3 class="display-4 mt-2 font-weight-400" id=""> </h3>
+<div class="content4"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid py-4 bg-primary-new">
+<div class="container py-5">
+<div class="row" id="">
+<div class="col-lg-6 pt-5 ">
+<h4 class="display-4 mt-2 font-weight-400" id=""></h4>
+<div class="content3"> </div>
+</div>
+<div class="col-lg-6 pt-5">
+<img class="w-100 contentImg"  src="img/bc-sm-2.jpg" alt=""></div>
+</div>
+</div>
+</div>
+<div class="container-fluid py-4 bg-brown">
+<div class="container py-5">
+<div class="row" id="">
+<div class="col-lg-12 pt-5 ">
+<h5 class="display-4 mt-2 font-weight-400" id=""> </h5>
+<div class="content6">  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid py-4 bg-primary-new">
+<div class="container py-5">
+<div class="row" id="">
+<div class="col-lg-6 pt-5 ">
+<h6 class="display-4 mt-2 font-weight-400"></h6>
+<div class="content3"></div>
+<a class="allShow ILinks" href="https://www.autoshopheroes.com">AutoShop Heroes</a>
+</div>
+<div class="col-lg-6 pt-5">
+<img class="w-100 contentImg"   src="img/core-web-vitals-banner2400.jpg" alt=""></div></div></div></div>
+
+
+<div class="container px-0">
+
+</div>
+
+
+<div class="container-fluid px-0">
+ 
+
+</div>
+
+ 
+<footer>
+ <div class="container py-4 pt-5" style="max-width: 1400px;">
+ <div class="row">
+ <div class="col-lg-3">
+     <p>AutoShop Heroes</p>
+     <p>Phone : (413) 341-0347</p>
+ 
+  <p>Email : support@autoshopheroes.com</p>
+ 
+ 
+ 
+ 
+
+  
+  <p>Address : 445 Seaside Ave Honolulu, HI 96815</p>
+     
+  
+ 
+  <p>Company Website : <a  class="text-break allShow" href="https://www.autoshopheroes.com" rel="nofollow">https://www.autoshopheroes.com</a></p>
+  
+ 
+  
+  </div>
+ 
+  <div class="col-lg-3">
+ 
+   
+<p class="sub">USEFUL LINKS</p>
+  
+
+<p><a class=" allShow" href="https://storage.googleapis.com/cloudsites/seo-services/865chgvuz/autoshop-heroes.html"  target="_blank">SEO Web Mechanics</a></p>
+<p><a class=" allShow" href="https://cloudlinks.blob.core.windows.net/cloudlinks/seo-services/865chgvuz/autoshop-heroes.html"  target="_blank">SEO For Auto Repair</a></p>
+<p><a class=" allShow" href="https://cloud-links.b-cdn.net/seo-services/865chgvuz/autoshop-heroes.html"  target="_blank">SEO For Car Repair</a></p>
+<p><a class=" allShow" href="https://idpenwej3uaz.compat.objectstorage.us-ashburn-1.oraclecloud.com/cloudlinks/seo-services/865chgvuz/autoshop-heroes.html"  target="_blank">SEO For Mechanics</a></p>
+<p><a class=" allShow" href="https://cloudlinks.s3.us-east-1.wasabisys.com/seo-services/865chgvuz/autoshop-heroes.html"  target="_blank">Auto Shop SEO</a></p>
+ <p><a class=" allShow" href="https://en.wikipedia.org/wiki/Search_engine_optimization"  target="_blank">Automotive SEO Services</a></p>
+</div>
+
+ 
+<div class="col-lg-3">
+  
+
+<p><a class=" allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a class=" allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a class=" allShow" href="" rel="nofollow" target="_blank"></a></p>
+
+
+ <p><a class=" allShow" href=""  target="_blank"></a></p>
+ 
+ 
+<p>
+   <a class="  allShow" href="sitemap.html" rel="nofollow" class=" allShow">
+ 
+
+
+ Sitemap</a></p>
+
+ 
+<p>
+ <a class="text-  allShow " href="privacy-policy.html" rel="nofollow"  class=" allShow">
+  
+ Privacy Policy</a></p>
+
+ 
+
+<p>
+ <p>
+ </p>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </p>
+</div>
+
+ 
+<div class="col-lg-3">
+ <div class="social">
+ 
+             
+ 
+ </div>
+ </div>
+</div>
+ </div>
+ 
+ 
+ </footer>
+
+</body>
+
+</html>
+
+
